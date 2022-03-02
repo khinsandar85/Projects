@@ -1,0 +1,232 @@
+*{
+    background-color: black;
+    /* border: 2px solid white; */
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    margin: 0 150px;
+    padding: 28px 0px;
+    /* border: 2px solid red; */
+    width:82%;
+    opacity: .9;
+    position: fixed;
+}
+.logo{
+    float: left;
+    font-size: 28px;
+}
+.pageName{
+    font-size: 28px;
+    margin-left: 10px;
+    float: left;
+}
+.price, .license, .login, .free{
+    float: right;
+    margin-top: 9px;
+    margin-left: 18px;
+    color: grey;
+    font-size: 18px;
+}
+.price:hover, .license:hover, .login:hover{
+    color: white;
+}
+.free{
+    color: white;
+    background-color: rgb(20, 162, 228);
+    /* border:2px solid rgb(20, 162, 228); */
+    padding: 8px 15px ;
+    margin:0px 0 2px 18px ;
+}
+.free:hover{
+    color: black;
+}
+.videoTxt{
+    margin: 0 150px;
+    padding: 18px 0px;
+    width:82%;
+    float: left;
+}
+.txt{
+    width: 45%;
+    margin: 200px 0 100px 0;
+    float: left;
+}
+.txtBig{
+    font-size: 65px;
+}
+.txtmedium{
+    font-size: 25px;
+}
+.personal, .commercial, .commercial:hover{
+    float: left;
+    color: white;
+    background-color: rgb(20, 162, 228);
+    border:2px solid rgb(20, 162, 228);
+    padding: 10px 20px ;
+    margin:10px 15px 10px 0 ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.personal:hover{
+    background-color: black;
+    border:2px solid rgb(20, 162, 228);
+
+}
+.commercial{
+    background-color: black;
+    border:2px solid rgb(20, 162, 228);
+
+}
+.day{
+    clear: both;
+    font-size: 16px;
+    opacity: .9;
+}
+.video{
+    /* border: 2px solid yellow; */
+    width: 50%;
+    float: right;
+    margin: 30px 0;
+}
+.one, .two, .three , .four , .five , .six, .seven{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid green; */
+    float: right;
+    margin-left: 25px;
+    margin-top: 25px;  
+}
+.four {
+    margin-right: 95px;
+}
+.space1{
+    /* border: 2px solid rgb(255, 81, 0); */
+    margin: 70px 150px;
+    padding: 18px 0px;
+    width:82%;
+    float: left;
+
+}
+.space2{
+    /* border: 2px solid rgb(255, 81, 0); */
+    margin: 20px 150px;
+    padding: 18px 0px;
+    width:82%;
+    float: left;
+}
+.chList{
+    margin: 0 150px;
+    /* border: 2px solid rgb(255, 81, 0); */
+    width:82%;
+    float: left;
+}
+.listTitle{
+    font-size: 28px;
+} 
+.listTitle a{
+    color: blue;
+}
+.listTitle a:hover{
+    color: red;
+}
+.aSong, .eSong, .mSong{
+    /* border: 2px solid yellow; */
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+.aSong{
+    float: left;
+    margin-left: 200px;
+}
+.aSong img , .eSong img, .mSong img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.aSong img:hover , .eSong img:hover, .mSong img:hover{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.eSong{
+    margin: 60px 180px 60px 330px;
+}
+.mSong{
+    float: right;
+    margin-right: 200px;
+}
+.footer{
+    margin: 0 150px;
+    /* border: 2px solid rgb(111, 0, 255); */
+    width:82%;
+    float: left;
+    margin-top: 15px;
+}
+.copy{
+    opacity: .6;
+    float: left;
+    margin: 10px 0;
+}
+.icon{
+    margin-left: 500px;
+    float: left;
+}
+.design{
+    float: right;
+    opacity: .6;
+}
+   /* small iPhone 678 */
+/* @media only screen and (max-width: 600px) {
+    .nav{
+        margin: 0 50px;
+    }
+    .licese,.price{
+        display: none;
+    }
+    
+    .videoTxt{
+        margin: 0 50px;
+        padding: 18px 0px;
+        width:100%;
+        /* float: left; */
+    } */
+    /* .txt{
+        width: 100%;
+        margin: 200px 0 100px 0;
+        float: left;
+    } */
+    /* .txtBig{
+        font-size: 45px;
+        width: 100%;
+    }
+    .txtmedium{
+        font-size: 20px;
+    } */
+    /* .personal, .commercial, .commercial:hover{
+        float: left;
+        color: white;
+        background-color: rgb(20, 162, 228);
+        border:2px solid rgb(20, 162, 228);
+        padding: 10px 20px ;
+        margin:10px 15px 10px 0 ;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .personal:hover{
+        background-color: black;
+        border:2px solid rgb(20, 162, 228);
+    
+    }
+    .commercial{
+        background-color: black;
+        border:2px solid rgb(20, 162, 228);
+    
+    } */
+}

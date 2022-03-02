@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu>li{
+    text-align: center;
+    list-style-type:none;
+    padding: 10px 20px;
+}
+#one{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.name , .header p{
+	color:green;
+	font-weight: bold;
+	font-size:29px;
+	animation-name:pageName;
+	text-shadow:3px 3px 4px;
+	animation:pageName 3s linear 0s infinite reverse;
+}
+@keyframes pageName{
+	0%{color:green;}
+	25%{color:pink;}
+	50%{color:blue;}
+	75%{color:red;}
+    100%{color:yellow;}
+}
+.menu li:hover{
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+#one:hover{
+    color: blue;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* weightImage */
+.weightImg img{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.spaceClean{
+    clear: both;
+    height: 20px;
+}
+.weightImg img {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.cover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.weightImg:hover .image {
+    opacity: 0.3;
+}  
+.weightImg:hover .cover {
+    opacity: 1;
+  }  
+.text h1{
+    color: white;
+    font-family: cursive;
+}
+.text p{
+    background-color:blue;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.text p:hover{
+    color: blue;
+    background-color:white;
+    
+}
+/* Text & Image */
+.change{
+    color:blue;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+.change:hover , .make1:hover{
+    text-decoration: underline;
+}
+.atag{
+    font-size: 15px;
+}
+.make1{
+    color: red;
+    font-size: 18px;
+}
+/* BOY */
+.imgTxt1, .imgTxt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Boy, .txt2{
+    width: 80%;
+    text-align: right;
+}
+.Girl{
+    width: 70%;
+    text-align: left;
+}
+.Boy img , .Girl img{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.txt1 , .txt2{
+    padding:110px 20px 20px 30px;
+}
+.Boy img:hover, .Girl img:hover{
+    transform: rotate(-4deg);
+    opacity: .8;
+    border-radius: 15px;
+}
+/* Fitness */
+.bgImg, .bgImgHealth, .contact{
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    background: url(img/twoPeople.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bgImg p{
+    color: blue;
+    padding: 150px 0px 0px 350px ;
+}
+.red{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Health */
+.health, .topHealth{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    position: relative;
+}
+.shortTxt{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    padding-top: 15px;
+    flex-direction: row;
+    text-align: right;
+}
+.longTxt{
+    width: 60%;
+    flex-direction: row;
+    padding-left: 30px;
+}
+.bgImgHealth{
+    background-image: url(img/women.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.shortTxt, .longTxt {
+    display: block;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    color: blue;
+    transition: .5s ease;
+} 
+.topHealth:hover .overlay {
+    bottom: 0;
+    height: 100%;
+} 
+.text {
+    white-space: nowrap; 
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* About */
+.about h1{
+    text-align: center;
+    font-size: 25px;
+    color:blue;
+    padding: 20px  ;
+    /* Gruppo , Bad Script, Kumar One Outline , Londrina Outline, Sriracha, Yellowtail, Bad Script*/
+    font-family: Bad -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.center{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    padding:10px 70px  50px 70px;
+    font-family: Bad -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/* Contact */
+.contact{
+    background-image: url(img/back1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Bad -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    height: 600px;
+}
+.contact p{
+    font-size: 29px;
+    font-weight: bold;
+    color: red;
+}
+form{
+    padding: 80px 0px 40px 200px;
+}
+input[type=text],[type=email], textarea , input[type=submit]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color:transparent;
+}
+
+input[type=text]::placeholder,[type=email]::placeholder,
+ textarea::placeholder , [type=submit]{
+    color: white;
+}
+input[type=email]{
+    width: 30.5%;
+}
+input:hover, textarea:hover{
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+/* footer */
+.footer{
+    display: flex;
+    height: 270px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.listOne, .listTwo, .listThree{
+    padding-top: 40px;
+}
+.footer li{
+    list-style-type: none;
+    line-height: 35px;
+    text-align: center;
+    font-size:15px ;
+    text-transform: uppercase;
+}
+.header{
+    padding: 120px 0 0 10px;
+    color: blue;
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+}
+.hrLine{
+    border-top: 2px solid black;
+    height: 1px;
+    margin: 5px 200px 0px 200px ;
+    clear: both;
+}
+.footerIcon{
+    text-align: center;
+} 
+.footer li:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* laptop mood */
+@media only screen and (min-width: 1000px) {
+
+}
+/* Lanscape Tablets */
+@media only screen and (max-width: 1024px) {
+    input[type=email]{
+        display: none;
+    }
+}
+/* small iPhone 678 */
+@media only screen and (max-width: 378px) {
+    .navbar,
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .iconList {
+        display: flex;
+        justify-content: center;
+    }  
+    .iconList>i {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar{
+        color: white;
+        width: 100%;
+        height: 320px;
+        background-image: url(img/b.jpg);
+    }
+    .weightImg{
+        display: none;
+    }
+    .imgTxt1, .imgTxt2{
+        display: flex;
+        flex-direction: column;
+    }
+    .txt1, .txt2{
+        padding:10px 20px 20px 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .Boy img, .Girl img{
+        width: 200px;
+        margin-left: 90px;
+    }
+    .fitness{
+        width: 100%;
+        border: 2px solid red;
+    }
+    .bgImg{
+        height: 200px;
+        background: url(img/4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    
+    }
+    .bgImg p{
+        color: blue;
+        padding: 60px 0px 0px 40px ;
+    }
+    .red{
+        color: red;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .shortTxt{
+        padding-top: 55px;
+    }
+    form{
+        padding: 40px 0px 20px 100px;
+    }
+    #state, #message, .listTwo,.listThree{
+        display: none;
+    }
+    input[type=email]{
+        width: 72.5%;
+    }
+    .header{
+        padding: 10px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .listOne{
+        margin-left: 10px;
+
+    }
+    
+}

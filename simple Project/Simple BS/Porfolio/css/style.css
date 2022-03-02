@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+	font-size: 18px;
+}
+/*.carousel-item{
+	height: 600px;
+}*/
+#service{
+	background-image: url('../img/car5.jpg');
+	background-position: center;
+	background-repeat: repeat-x;
+
+}
+#contact{
+	background-image: url('../img/car4.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	color:white;
+}
+#contact.container{
+	background-color: rgb(0,0,0,0.8);
+}
+#contact input, #contact textarea{
+	background-color:transparent;
+}
+.list-unstyled li{
+	padding: 5px;
+}

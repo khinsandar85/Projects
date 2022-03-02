@@ -1,0 +1,218 @@
+*{
+	margin:0;
+	padding:0;
+	font-size: 18px;
+}
+/*index1*/
+#service{
+	background-color: black;
+}
+#row2{
+	background-color: gray;
+}
+#collection{
+	font-style:italic;
+	color:blue;
+}
+#opa{
+	opacity: 0.7;
+	font-style: italic;
+}
+#ita{
+	font-style: italic;
+}
+#more , #add , #contact{
+	display: none;
+}
+#contact.container{
+	background-color: red;
+}
+#contact input, #contact textarea{
+	background-color:transparent;
+}
+.list-unstyled li{
+	padding: 5px;
+}
+.carousel-inner{
+	width:100%;
+	height:660px;
+}
+#collection{
+	margin-left: 10%;
+}
+#gif{
+	background-image: url('../img/gg7.jpg');
+	background-position: center;
+	background-attachment: fixed;	
+	color:white;
+}
+#gif.container{
+	background-color: rgb(0,0,0,0.8);
+}
+#gif input, #gif textarea{
+	background-color:transparent;
+}
+#aa{
+	position:relative;
+}
+#aa img{
+ 	width: 100%;
+ 	height: auto;
+}
+#aa #cc{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	font-size: 16px;
+	padding: 12px 24px;
+	text-align: center;
+}
+#character{
+	background-image: url('../img/gif2.gif');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: black;	
+	color:white;
+}
+#character.container{
+	background-color: rgb(0,0,0,0.8);
+}
+#character input, #character textarea{
+	background-color:transparent;
+}
+#character1{
+	background-image: url('../img/tt4.jpg');
+	background-position: center;
+	background-attachment: fixed;	
+	color:white;
+}
+#character1.container{
+	background-color: rgb(0,0,0,0.8);
+}
+#character1 input, #character1 textarea{
+	background-color:transparent;
+}
+#btn{
+	position:relative;
+	margin-top:20px;
+}
+#add{
+	background-image: url('../img/1a.jpg');
+	background-position: center;
+	background-attachment: fixed;	
+	color:white;
+}
+#add.container{
+	background-color: rgb(0,0,0,0.8);
+}
+#add input, #add textarea{
+	background-color:transparent;
+}
+#about ,#FBlack , #edit{
+	background-color:black;
+}
+#in{
+	text-indent: 10%;
+}
+#sb{
+	padding-top:2px;
+}
+#adding{
+	padding-top:2px;
+}
+#textC{
+	color:white;
+}
+#textd{
+	color:white;
+}
+#under:hover{
+	text-decoration: underline;
+}
+.txt{
+	background-color: lightgreen;
+	display:none;
+	width:300px;
+	height: 500px;
+}
+/*title*/
+#topH:hover{
+	color:yellow;
+	font-weight: bold;
+	font-style:italic;
+}
+@keyframes anime{
+	0%{color:green;}
+	25%{color:pink;}
+	50%{color:blue;}
+	75%{color:red;}
+    100%{color:yellow;}
+}
+#anime{
+	color:green;
+	font-weight: bold;
+	font-size:30px;
+	animation-name:anime;
+	text-shadow:3px 3px 4px;
+	animation:anime 3s linear 0s infinite reverse;
+}
+#topT{
+	color:green;
+	font-size: 20px;
+	animation-name:anime;
+	text-shadow:3px 3px 4px;
+	animation:anime 3s linear 0s infinite reverse;
+}
+#bold{
+	font-weight: bold;
+	color:red;
+}
+#tb{
+	width: 35px;
+	height:35px;
+	}
+@keyframes rotate{
+		 0%{transform: rotateZ(0deg);}
+	    50%{transform: rotateZ(20deg);}
+	    100%{transform: rotateZ(0deg);}
+	}
+#tb:hover{
+	width: 45px;
+	height:45px;
+	animation-name:rotate;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:2s;
+}
+#tspace{
+	letter-spacing: 7px;
+	color :white;
+}
+/*footer*/
+#size{
+	width: 35px;
+	height:35px;
+	}
+@keyframes rotate{
+		 0%{transform: rotateZ(0deg);}
+	    50%{transform: rotateZ(180deg);}
+	    100%{transform: rotateZ(360deg);}
+	}
+#size:hover{
+	width: 45px;
+	height:45px;
+	animation-name:rotate;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:2s;
+}
+#ho:hover, #back:hover{
+	color:blue;
+}
+#hoho:hover, #adding:hover, #back1:hover{
+	color:red;
+}

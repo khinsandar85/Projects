@@ -1,0 +1,91 @@
+var source_cookie_lifetime = 30;
+
+function get_source() {
+    var campaign = get_url_parameter(document.URL, '_us');
+    var campaign_extra = get_url_parameter(document.URL, '_usx');
+    var mbsy_short_code = get_url_parameter(document.URL, 'mbsy');
+    var referrer = get_clean_url(document.referrer);
+    var user_source;
+    var user_source_extra;
+
+    if (campaign != '') {
+        user_source = campaign;
+        user_source_extra = campaign_extra;
+    } else if (referrer != '') {
+        user_source = 'other';
+        user_source_extra = referrer;
+    } else {
+        user_source = 'direct';
+        user_source_extra = document.URL;
+    }
+
+    return {
+        user_source: user_source,
+        user_source_extra: user_source_extra,
+        mbsy: mbsy_short_code,
+    };
+}
+
+function get_clean_url(url) {
+    var url_anchor = document.createElement('a');
+    url_anchor.href = url;
+    return url != '' ? url_anchor.protocol + '//' + url_anchor.hostname + url_anchor.pathname : '';
+}
+
+function get_url_parameter(url, name) {
+    return (
+        decodeURIComponent(
+            (new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(url) || [
+                ,
+                '',
+            ])[1].replace(/\+/g, '%20'),
+        ) || ''
+    );
+}
+
+// Generic Function to set a cookie with 3 parameters
+function set_cookie(cookie_name, cookie_value, expiry_value_days) {
+    var d = new Date();
+    d.setTime(d.getTime() + expiry_value_days * 24 * 60 * 60 * 1000);
+    var expires = 'expires=' + d.toUTCString();
+    document.cookie =
+        cookie_name + '=' + cookie_value + ';domain=epidemicsound.com;' + expires + '; path=/;';
+}
+
+// Generic Function to return the value from a cookie by its name
+function get_cookie(cookie_name) {
+    var name = cookie_name + '=';
+    var cval_array = document.cookie.split(';');
+    for (var i = 0; i < cval_array.length; i++) {
+        var cval_return = cval_array[i];
+        while (cval_return.charAt(0) == ' ') cval_return = cval_return.substring(1);
+        if (cval_return.indexOf(name) != -1) {
+            return cval_return.substring(name.length, cval_return.length);
+        }
+    }
+    return '';
+}
+
+// Checks and sets the cookie according to if it is set or not.
+function check_cookie() {
+    var user_source = get_cookie('_esus');
+    var user_source_info = get_source();
+    var us = user_source_info['user_source'];
+
+    if (us !== 'direct' && us !== 'other' && us !== '') {
+        // overwrite existing user_source
+        set_cookie('_esus', user_source_info['user_source'], source_cookie_lifetime);
+        set_cookie('_esusx', user_source_info['user_source_extra'], source_cookie_lifetime);
+        set_cookie('mbsy', user_source_info['mbsy'], source_cookie_lifetime);
+    } else {
+        // overwrite existing user_source if cookie is empty
+        if (user_source == '') {
+            set_cookie('_esus', user_source_info['user_source'], source_cookie_lifetime);
+            set_cookie('_esusx', user_source_info['user_source_extra'], source_cookie_lifetime);
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    check_cookie();
+});

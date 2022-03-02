@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="feather-icons-web/feather.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBW0NvG6baaJkEayid07bFQdmXwOVjFtwsg&usqp=CAU">
+    <title>Facebook</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <div class="left">
+            <div class="left-box">
+                <img src="img/fb-logo.png" class="logo" alt="">
+                <div class="search-box">
+                    <i class="feather-search"></i>
+                    <input type="text" class="search-input" placeholder="Search Facebook" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center-box">
+                <div class="center-link active">
+                    <i class="feather-home center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-flag center-icon"></i>
+                </div>
+                <div class="center-link">
+                    <i class="feather-airplay center-icon"></i>
+                    <span class="noti">6</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-users center-icon"></i>
+                    <span class="noti">9</span>
+                </div>
+                <div class="center-link">
+                    <i class="feather-grid center-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-box">
+                <div class="profile">
+                    <img src="img/my.jpg" alt="" class="profile-photo">
+                    <span class="profile-text">Khin</span>
+                </div>
+                <div class="right-noti-box">
+                    <div class="right-noti">
+                        <i class="feather-plus"></i>
+                    </div>
+                    <div class="right-noti">
+                        <i class="feather-message-square"></i>
+                    </div>
+                    <div class="right-noti .center-link .noti">
+                        <i class="feather-bell"></i>
+                        <span class="noti">3</span>
+                    </div>
+                    <div class="right-noti">
+                        <i class="feather-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <section class="fb-body">
+        <section class="fb left-aside">
+            <div class="setting">
+                <div class="icon-text">
+                    <i id="covide" class="fas fa-medkit"></i>
+                    <p>COVID-19 Information Center</p>
+                </div>
+                <div class="icon-text">
+                    <i id="msg" class="feather-message-square"></i>
+                    <p>Messenger</p>
+                </div>
+                <div class="icon-text">
+                    <i id="live-video" class="feather-youtube"></i>
+                    <p>Live Video</p>
+                </div>
+                <div class="icon-text">
+                    <i id="pages" class="fas fa-flag"></i>
+                    <p>Pages</p>
+                </div>
+                <div class="icon-text">
+                    <i id="videos" class="fas fa-play-circle"></i>
+                    <p class="icon-text-num">Videos 
+                        <span >15</span>
+                    </p>
+                </div>
+                <div class="more-icon">
+                    See More
+                <i class="feather-chevrons-down"></i>
+                </div>
+            </div>
+            <div class="shortcuts">
+                <div class="shortcuts-name">
+                    <p>Your Shortcuts</p>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/swd.png" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        MMS IT SWD
+                        <span class="shortcuts-text-num">15</span>
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/flag.png" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        ဂျပန်စာ လေ့လာကြမယ် By CiC
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/bwd.png" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        New BWD
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/git.jpeg" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        MMS IT GIT Class
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/meow.jpg" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        Dominose Battle
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/anime.png" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        <i>Anime Support Myanmar Upload GP </i>
+                    </div>
+                </div>
+                <div class="shortcuts-box">
+                    <div class="shortcuts-img">
+                        <img src="img/korea.jpg" alt="">
+                    </div>
+                    <div class="shortcuts-text">
+                        ကိုးရီးယားကား မြန်မာစာတန်းထိုး
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fb news-feed">
+            <div class="myday-scroll">
+                <i class="feather-chevron-right"></i>
+            </div>
+            <div class="myday-list">
+                <div class="myday-item">
+                    <div class="myday" style="background-image: url(img/myday.jpg);">
+                        <div class="myday-owner">
+                            <i class="feather-plus"></i>
+                        </div>
+                        <p class="myday-text">Create Story</p>
+                </div>
+                </div>
+                <div class="myday-item">
+                    <div class="myday chit" >
+                        <div class="myday-owner">
+                            <div class="myday-owner-img"  style="background-image: url(img/meow.jpg);"></div>
+                        
+                        </div>
+                        <p style="font-size: 10px; color: rgb(29, 28, 28);">
+                            Congratulation par Babe 
+                            <i class="fas fa-heart" style="color: black;"></i> 
+                            <i class="fas fa-heart" style="color: black;"></i> 
+                        </p>
+                        <p class="myday-text">Melon Melondy</p>
+                    </div>
+                </div>
+                <div class="myday-item">
+                    <div class="myday" style="background-image: url(img/wall1.jfif); ">
+                        <div class="myday-owner">
+                            <div class="myday-owner-img"  style="background-image: url(img/liss.png); background-repeat: no-repeat;"></div>
+                        </div>
+                        <p class="myday-text">Li Li San</p>
+                    </div>
+                </div>
+                <div class="myday-item">
+                    <div class="myday" style="background-image: url(img/gege.jpg);">
+                        <div class="myday-owner">
+                            <div class="myday-owner-img"  style="background-image: url(img/nangmya.jpg);"></div>
+                        </div>
+                        <p class="myday-text">Nang Myintzu</p>
+                    </div>
+                </div>
+                <div class="myday-item">
+                    <div class="myday" style="background-image: url(img/windyimg.jpg); background-color:#d8d9dd;">
+                        <div class="myday-owner">
+                            <div class="myday-owner-img"  style="background-image: url(img/windy.jpg);"></div>
+                        </div>
+                        <p class="myday-text">Windy Windy PanCake</p>
+                    </div>
+                </div>
+                
+                <div class="myday-item">
+                    <div class="myday" style="background-image: url(img/lili.jpg); background-color: #b9b4c0;">
+                        <div class="myday-owner">
+                            <div class="myday-owner-img"  style="background-image: url(img/liss.png); background-repeat: no-repeat;"></div>
+                        </div>
+                        <p class="myday-text">Lisa Lisa</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="post-add">
+                <div class="post-add-box">
+                    <div class="add-text">
+                        <img src="img/my.jpg" class="add-text-profile" alt="">
+                        <div class="add-text-box">
+                            <input type="text" class="search-input" placeholder="What's on your mind, Khin ? " name="" id="">
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="add-file">
+                        <div class="video">
+                            <i class="fas fa-video"></i>
+                            <span>Live Video</span>
+                        </div>
+                        <div class="photo">
+                            <i class="far fa-image"></i>
+                            <span>Add Photo</span>
+                        </div>
+                        <div class="emoji">
+                            <i class="far fa-smile-wink"></i>
+                            <span>Live Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- post-one -->
+            <div class="post-list">
+                <div class="name-box">
+                    <div class="name-img">
+                        <img class="name-img-cir" src="img/liss.png" alt="">
+                        <div class="green-ball"></div>
+                        <div class="name">
+                            <p >Olga&nbsp;Olga</p>
+                            <p>1 hr . <i class="fas fa-globe-americas"></i></p>    
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                     We LOVE LISA
+                    <i id="lisa-heart" class="feather-heart"></i>
+                </div>
+                <div class="post-img-box">
+                </div>
+                <div class="like-box">
+                    <i id="like" class="far fa-thumbs-up" ></i>
+                    <i id="heart" class="feather-heart"></i>
+                    <p class="like-text">You and 110 others</p>
+                    <p class="like-text-right-more"> 13 comments . 3 shares</p>
+                </div>
+                <div class="react-box">
+                    <div class="like-box">
+                        <i id="give-heart" class="feather-heart"></i>
+                        <span class="give-heart-text">Love</span>
+                    </div>
+                    <div class="comment-box">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="share-box">
+                        <i class="feather-share-2"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+                <div class="my-write-box">
+                    <img src="img/my.jpg" class="my-img" alt="">
+                    <div class="my-write">
+                        <input type="text" class="my-write-input" placeholder="Write a comment..." name="" id="">
+                        
+                        <i class="feather far fa-smile"></i>
+                        <i class="feather feather-camera"></i>
+                        <i class="feather feather-gift"></i>
+                        <i class="feather feather-image"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post-two -->
+            <div class="post-list">
+                <div class="name-box">
+                    <div class="name-img">
+                        <img class="name-img-cir" src="img/yya.jpg" alt="">
+                        <div class="green-ball"></div>
+                        <div class="name">
+                            <p >Melon&nbsp;Melondy</p>
+                            <p>12 hr . <i class="feather-users"></i></p>    
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    New Version.. (Hotel Deluna Os Song)
+                </div>
+                <div class="post-img-box-two">                   
+                    <video width="100%" controls>
+                        <source src="video/coco.mp4" type="video/mp4">
+                        <source src="video/coco.mp4" type="video/ogg">
+                      </video>
+                </div>
+                <div class="like-box">
+                    <i id="like" class="far fa-thumbs-up" ></i>
+                    <i id="heart" class="feather-heart"></i>
+                    <p class="like-text">Seng San and 94 others</p>
+                    <p class="like-text-right-more-video"> 13 comments . 3 shares . 94 views</p>
+                </div>
+                <div class="react-box">
+                    <div class="like-box">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="comment-box">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="share-box">
+                        <i class="feather-share-2"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+                <div class="my-write-box">
+                    <img src="img/my.jpg" class="my-img" alt="">
+                    <div class="my-write">
+                        <input type="text" class="my-write-input" placeholder="Write a comment..." name="" id="">
+                        
+                        <i class="feather far fa-smile"></i>
+                        <i class="feather feather-camera"></i>
+                        <i class="feather feather-gift"></i>
+                        <i class="feather feather-image"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post-three -->
+            <div class="post-list">
+                <div class="name-box">
+                    <div class="name-img">
+                        <img class="name-img-cir" src="img/yibo.jpg" alt="">
+                        <div class="green-ball"></div>
+                        <div class="name">
+                            <p >Baby&nbsp;Pinky</p>
+                            <p>55 min . <i class="fas fa-globe-americas"></i></p>    
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                     အိတ်လေးတွေ ရဘီနော်.. <br>
+                     အိတ်အစုံ instock ရှိနေဘီ <br>
+                     ဆိုင်မှာ လာကြည့်လို့လဲရတယ်နော် ... See more
+                    <!-- <i id="lisa-heart" class="feather-heart"></i> -->
+                </div>
+                <div class="like-box">
+                    <i id="like" class="far fa-thumbs-up" ></i>
+                    <i id="heart" class="feather-heart"></i>
+                    <p class="like-text">Li Li and 46 others</p>
+                    <p class="like-text-right"> 8 comments</p>
+                </div>
+                <div class="react-box">
+                    <div class="like-box">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="comment-box">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="share-box">
+                        <i class="feather-share-2"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+                <div class="my-write-box">
+                    <img src="img/my.jpg" class="my-img" alt="">
+                    <div class="my-write">
+                        <input type="text" class="my-write-input" placeholder="Write a comment..." name="" id="">
+                        
+                        <i class="feather far fa-smile"></i>
+                        <i class="feather feather-camera"></i>
+                        <i class="feather feather-gift"></i>
+                        <i class="feather feather-image"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post-four -->
+            <div class="post-list">
+                <div class="name-box">
+                    <div class="name-img">
+                        <img class="name-img-cir" src="img/flag.png" alt="">
+                        <div class="green-ball"></div>
+                        <div class="name">
+                            <p >Learning&nbsp;Japanese&nbsp;Languages</p>
+                            <p>3 d . <i class="fas fa-globe-americas"></i></p>    
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    日本語を 勉強しましょう。。
+                    <i id="lisa-heart" class="feather-heart"></i>
+                </div>
+                <div class="post-img-box">
+                    <img class="post-img-four" src="img/japan.jpg" alt="">
+                </div>
+                <div class="like-box">
+                    <i id="like" class="far fa-thumbs-up" ></i>
+                    <i id="heart" class="feather-heart"></i>
+                    <p class="like-text">You and 110 others</p>
+                    <p class="like-text-right-more"> 44 comments. 1.4K shares</p>
+                </div>
+                <div class="react-box">
+                    <div class="like-box">
+                        <i id="give-like" class="far fa-thumbs-up"></i>
+                        <span class="give-like-text">Like</span>
+                    </div>
+                    <div class="comment-box">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="share-box">
+                        <i class="feather-share-2"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+                <div class="my-write-box">
+                    <img src="img/my.jpg" class="my-img" alt="">
+                    <div class="my-write">
+                        <input type="text" class="my-write-input" placeholder="Write a comment..." name="" id="">
+                        
+                        <i class="feather far fa-smile"></i>
+                        <i class="feather feather-camera"></i>
+                        <i class="feather feather-gift"></i>
+                        <i class="feather feather-image"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- post-five -->
+            <div class="post-list">
+                <div class="name-box">
+                    <div class="name-img">
+                        <img class="name-img-cir" src="img/img2.jfif" alt="">
+                        <div class="green-ball"></div>
+                        <div class="name">
+                            <p >Poe&nbsp;Mamhe&nbsp;Thar</p>
+                            <p>1 d . <i class="fas fa-globe-americas"></i></p>    
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="caption">
+                    Good Morning 
+                    <i id="lisa-heart" class="feather-heart"></i>
+                </div>
+                <div class="post-img-box-five">
+                    <img class="post-img-five" src="img/cover3.jpg" alt="">
+                </div>
+                <div class="like-box">
+                    <i id="like" class="far fa-thumbs-up" ></i>
+                    <i id="heart" class="feather-heart"></i>
+                    <p class="like-text">You and 21K others</p>
+                    <p class="like-text-right-more"> 298 comments. 4.4K shares</p>
+                </div>
+                <div class="react-box">
+                    <div class="like-box">
+                        <i id="give-heart" class="feather-heart"></i>
+                        <span class="give-heart-text">Love</span>
+                    </div>
+                    <div class="comment-box">
+                        <i class="far fa-comment-alt"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="share-box">
+                        <i class="feather-share-2"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+                <div class="my-write-box">
+                    <img src="img/my.jpg" class="my-img" alt="">
+                    <div class="my-write">
+                        <input type="text" class="my-write-input" placeholder="Write a comment..." name="" id="">
+                        
+                        <i class="feather far fa-smile"></i>
+                        <i class="feather feather-camera"></i>
+                        <i class="feather feather-gift"></i>
+                        <i class="feather feather-image"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="fb chat-box">
+            <!-- sponsored -->
+            <div class="shortcuts">
+                <div class="sponsored-name">
+                    <p>Sponsored</p>
+                </div>
+                <div class="sponsored-box">
+                    <div class="sponsored-img">
+                        <img src="img/spon1.jfif" alt="">
+                    </div>
+                    <div class="sponsored-text">
+                        <p>
+                            3 Reasons Why You Can't Afford to skip on User Experience in 2020
+                        </p>
+                        <span>torquemag.io</span>
+                    </div>
+                </div>
+                <div class="sponsored-box">
+                    <div class="sponsored-img">
+                        <img src="img/spon2.jpg" alt="">
+                    </div>
+                    <div class="sponsored-text">
+                        <p>
+                            Don't make a decision just yet until you've explored Harbore.Space University
+                        </p>
+                        <span>in.harbour.space</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shortcuts-divider"></div>
+            <!-- birthday -->
+            <div class="shortcuts">
+                <div class="birthday-name">
+                    <p>Birthdays</p>
+                </div>
+                <div class="birthday-box">
+                    <i class="feather-gift"></i>
+                    <p class="birthday-text">Hsu Myat and 3 others have birthdays today.</p>
+                </div>
+            </div>
+            <div class="shortcuts-divider"></div>
+            <!-- contact -->
+            <div class="shortcuts">
+                <div class="contacts-name">
+                    <p>Contacts</p>
+                    <div class="contacts-icon">
+                        <i class="feather-video"></i>
+                        <i class="feather-search"></i>
+                        <i class="feather-more-horizontal"></i>
+                    </div>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/liss.png" alt="">
+                    <p class="contacts-text">Olga Olga</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/nangmya.jpg" alt="">
+                    <p class="contacts-text">Nang Myintzu</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/back.jpg" alt="">
+                    <p class="contacts-text">Khin Sandar</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/gege.jpg" alt="">
+                    <p class="contacts-text">Thant Zin</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/bag.jpg" alt="">
+                    <p class="contacts-text">Ar Pan</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/mama.jpg" alt="">
+                    <p class="contacts-text">K Zin Tun</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/meow.jpg" alt="">
+                    <p class="contacts-text">Zaw Lin Phyo</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/yibo.jpg" alt="">
+                    <p class="contacts-text">Yan Lin Aung</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/yya.jpg" alt="">
+                    <p class="contacts-text">Melon Melondy</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/nangmya.jpg" alt="">
+                    <p class="contacts-text">Nang Myintzu</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/windy.jpg" alt="">
+                    <p class="contacts-text">Phyo Wai Aung</p>
+                </div>
+                <div class="contacts-box">
+                    <img class="contacts-box-img" src="img/post.jpg" alt="">
+                    <p class="contacts-text">Baby Pinky</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
